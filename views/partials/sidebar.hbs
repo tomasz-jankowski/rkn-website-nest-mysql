@@ -1,0 +1,192 @@
+<div class="main-columns-wrapper">
+
+    <nav>
+        <div class="left-content-column">
+            <div class="menu-main">
+
+                <ul class="menu-items menu-left">
+                    <li class="menu-items-header">
+                        <span class="show-hide-main-menu">
+                            <span class="show-on-small-screen menu-link-icon glyphicon glyphicon-chevron-right"></span>
+                            <span class="menu-link-label">Menu</span>
+                        </span>
+                    </li>
+
+                    <li>
+                        <a href=" panel_path " title="Wyświetla panel zarządzania platformy." class="menu-link"
+                            target="_self" rel="noopener" accesskey="">
+                            <span class="menu-link-icon fa fa-home" aria-hidden="true"></span>
+                            <span class="menu-link-label">Panel zarządzania</span>
+                        </a>
+                    </li>
+
+                    {{!-- if current_user.rank == 3 --}}
+                    <ul class="menu-items">
+                        <li class="menu-items-header">
+                            <span class="show-hide-main-menu">
+                                <span
+                                    class="show-on-small-screen menu-link-icon glyphicon glyphicon-chevron-right"></span>
+                                <span class="menu-link-label">Rada Kół Naukowych</span>
+                            </span>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/budgets" class="menu-link" title="Przygotuj się do startu">
+                                <span class="menu-link-icon glyphicon glyphicon-piggy-bank"></span>
+                                <span class="menu-link-label">Budżet</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/forms" class="menu-link" title="Przygotuj się do startu">
+                                <span class="menu-link-icon glyphicon glyphicon-folder-open"></span>
+                                <span class="menu-link-label">Wnioski</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/societies" class="menu-link" title="Przygotuj się do startu">
+                                <span class="menu-link-icon glyphicon glyphicon-globe"></span>
+                                <span class="menu-link-label">Koła i organizacje</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/pages" class="menu-link" title="Przygotuj się do startu">
+                                <span class="menu-link-icon glyphicon glyphicon glyphicon-duplicate"></span>
+                                <span class="menu-link-label">Podstrony</span>
+                            </a>
+                        </li>
+                    </ul>
+                    {{!-- end --}}
+                    {{!-- if current_user.rank == 4 --}}
+                    <ul class="menu-items">
+                        <li class="menu-items-header">
+                            <span class="show-hide-main-menu">
+                                <span
+                                    class="show-on-small-screen menu-link-icon glyphicon glyphicon-chevron-right"></span>
+                                <span class="menu-link-label">Opcje administracyjne</span>
+                            </span>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/accounts" class="menu-link" title="Przygotuj się do startu">
+                                <span class="menu-link-icon glyphicon glyphicon-repeat"></span>
+                                <span class="menu-link-label">Konta</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/budgets" class="menu-link" title="Przejdź do sekcji prezentującej treść">
+                                <span class="menu-link-icon glyphicon glyphicon-piggy-bank"></span>
+                                <span class="menu-link-label">Budżety</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/forms" class="menu-link" title="Przygotuj się do startu">
+                                <span class="menu-link-icon glyphicon glyphicon-folder-open"></span>
+                                <span class="menu-link-label">Wnioski</span>
+                            </a>
+                        </li>
+                    </ul>
+                    {{!-- end --}}
+
+                    {{!-- if current_user.rank == 10 --}}
+                    <ul class="menu-items">
+                        <li class="menu-items-header">
+                            <span class="show-hide-main-menu">
+                                <span
+                                    class="show-on-small-screen menu-link-icon glyphicon glyphicon-chevron-right"></span>
+                                <span class="menu-link-label">Opcje administracyjne</span>
+                            </span>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/accounts" class="menu-link" title="Przygotuj się do startu">
+                                <span class="menu-link-icon glyphicon glyphicon-repeat"></span>
+                                <span class="menu-link-label">Konta</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/budgets" class="menu-link" title="Przejdź do sekcji prezentującej treść">
+                                <span class="menu-link-icon glyphicon glyphicon-piggy-bank"></span>
+                                <span class="menu-link-label">Przyznane Budżety</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/forms" class="menu-link" title="Przygotuj się do startu">
+                                <span class="menu-link-icon glyphicon glyphicon-folder-open"></span>
+                                <span class="menu-link-label">Wnioski</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/pages" class="menu-link" title="Przyglądy i wygląd łączy">
+                                <span class="menu-link-icon glyphicon glyphicon-pushpin"></span>
+                                <span class="menu-link-label">Podstrony</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/societies" class="menu-link" title="Koła naukowe i organizacje">
+                                <span class="menu-link-icon glyphicon glyphicon-globe"></span>
+                                <span class="menu-link-label">Koła naukowe i organizacje</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href="/faculties" class="menu-link" title="Koła naukowe i organizacje">
+                                <span class="menu-link-icon glyphicon glyphicon-briefcase"></span>
+                                <span class="menu-link-label">Wydziały</span>
+                            </a>
+                        </li>
+                    </ul>
+                    {{!-- end --}}
+
+                    {{!-- if @active_society --}}
+                    <ul class="menu-items">
+                        <li class="menu-items-header">
+                            <span class="show-hide-main-menu">
+                                <span
+                                    class="show-on-small-screen menu-link-icon glyphicon glyphicon-chevron-right"></span>
+                                <span class="menu-link-label">
+                                    {{!-- @active_society.name --}}
+                                </span>
+                            </span>
+                        </li>
+                        <li class="menu-item">
+                            <a href=" edit_society_path(@active_society)  " class="menu-link"
+                                title="Edycja podstawowych informacji o kole">
+                                <span class="menu-link-icon glyphicon glyphicon-info-sign"></span>
+                                <span class="menu-link-label">Podstawowe informacje</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href=" society_forms_path(@active_society) " class="menu-link"
+                                title="Przygotuj się do startu">
+                                <span class="menu-link-icon glyphicon glyphicon-folder-open"></span>
+                                <span class="menu-link-label">Wnioski</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href=" society_memberships_path(@active_society) " class="menu-link"
+                                title="Zarządzanie listą członków">
+                                <span class="menu-link-icon glyphicon glyphicon-list"></span>
+                                <span class="menu-link-label">Lista członków</span>
+                            </a>
+                        </li>
+                        <li class="menu-item">
+                            <a href=" society_activities_path(@active_society) " class="menu-link"
+                                title="Zarządzanie raportem z aktywności koła">
+                                <span class="menu-link-icon glyphicon glyphicon-list-alt"></span>
+                                <span class="menu-link-label">Aktywności</span>
+                            </a>
+                        </li>
+                    </ul>
+                    {{!-- end --}}
+
+
+                </ul>
+            </div>
+            <!-- /main-menu -->
+            <!-- wskaznik przewijania -->
+            <div class="main-menu-scroll-indicator"></div>
+        </div>
+        <!-- /left-content-column -->
+    </nav>
+
+    <div class="right-content-column" id="main-page-content">
+        <main>
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-12 col-md-12 col-sm-12 col-xs-12">

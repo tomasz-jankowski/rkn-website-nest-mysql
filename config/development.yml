@@ -1,7 +1,7 @@
 db:
-  host: 'localhost'
+  host: 'tjankow.atthost24.pl'
   username: '17589_rkn'
-  password: 'Kq8f021DNWz7#'
+  password: 'Yc2@*s$4$0H7h'
   synchronize: true
 
 jwt:

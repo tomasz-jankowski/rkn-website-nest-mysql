@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="pl">
+
+<head>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="Robots" content="noindex, nofollow">
+    <meta name="msapplication-config" content="none" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+    <title>Rada Kół Naukowych Politechniki Poznańskiej</title>
+    <link rel="shortcut icon" href="https://rkn.put.poznan.pl/favicon.ico" type="image/x-icon">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+        integrity="sha256-eZrrJcwDc/3uDhsdt61sL2oOBY362qM3lon1gyExkL0=" crossorigin="anonymous" />
+    <link rel="stylesheet" type="text/css"
+        href="https://elogin.put.poznan.pl/style/common/put/put.reset.css?2018032803">
+    <link rel="stylesheet" type="text/css" href="https://elogin.put.poznan.pl/style/common/put/put.base.css?2018032803">
+    <link rel="stylesheet" type="text/css"
+        href="https://elogin.put.poznan.pl/style/common/put/put.theme.css?2018032803">
+    <script type="text/javascript" src="https://elogin.put.poznan.pl/scripts/common/common.js?2018032803"></script>
+    <script type="text/javascript" src="https://elogin.put.poznan.pl/scripts/common/jquery-2.2.3.min.js"></script>
+    <script type="text/javascript" src="https://elogin.put.poznan.pl/scripts/common/jquery.stateful.js"></script>
+    <script type="text/javascript" src="https://elogin.put.poznan.pl/scripts/common/js.cookie.js"></script>
+    <script type="text/javascript" src="https://elogin.put.poznan.pl/scripts/common/sprintf.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW"
+        crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://elogin.put.poznan.pl/scripts/component/bootbox/bootbox.min.js"></script>
+    <script type="text/javascript"
+        src="https://elogin.put.poznan.pl/scripts/component/elogin/put.ekonto.sidebar.js?2018032803"></script>
+    <script type="text/javascript"
+        src="https://elogin.put.poznan.pl/scripts/common/put/put.base.js?2018032803"></script>
+
+    <script src="https://cdn.ckeditor.com/4.10.1/standard/ckeditor.js"></script>
+
+    <script type="text/javascript">
+        if (isFrame()) {
+            //eLogin nie może być w ramce
+            top.location = window.location;
+        }
+    </script>
+
+    <script type="text/javascript" src="https://elogin.put.poznan.pl/scripts/common/bowser.min.js"></script>
+    <script type="text/javascript" src="https://elogin.put.poznan.pl/scripts/common/jquery.metadata.js"></script>
+    <script type="text/javascript" src="https://elogin.put.poznan.pl/scripts/common/jquery.json-2.2.min.js"></script>
+
+    <!--suppress JSUnusedLocalSymbols -->
+
+    <script type="text/javascript" src="https://elogin.put.poznan.pl/scripts/global.js?2018032803"></script>
+    <script type="text/javascript">
+        $(document).ready(function (e) {
+            $('.current-user-avatar a').click(function (e) {
+                e.preventDefault();
+                bootbox.confirm({
+                    message: '<p>Zdjęcie profilu pobierane jest z&nbsp;serwisu www.gravatar.com na podstawie adresu e-mail, który możesz ustawić w&nbsp;awaryjnej procedurze odzyskiwania hasła do Twojego eKonta. Zdjęcie to będzie publicznie dostępne dla każdego, kto zna ten adres e-mail. Serwis ten <strong>nie jest obsługiwany przez Politechnikę Poznańską</strong>. Prosimy zapoznać się z&nbsp;warunkami korzystania z&nbsp;tego serwisu i&nbsp;we własnym zakresie zdecydować o&nbsp;jego użyciu. Prosimy <strong>nie używać w&nbsp;serwisie Gravatar tego samego hasła</strong>, którym zabezpieczone jest Twoje eKonto.</p><p>Korzystanie z&nbsp;usługi Gravatar jest dobrowolne i&nbsp;nie wpływa na zakres usług świadczonych przez Politechnikę Poznańską.</p>',
+                    buttons: {
+                        confirm: {
+                            label: 'OK'
+                        },
+                        cancel: {
+                            label: 'Anuluj'
+                        }
+                    },
+                    callback: function (r) {
+                        if (r) {
+                            window.location.href = '/?do=ResetPasswordDataEdit';
+                        }
+                    }
+                });
+                return false;
+            });
+        });
+    </script>
+
+    <link rel="stylesheet" type="text/css" href="https://elogin.put.poznan.pl/style/component/statistics/style.css">
+</head>
+
+<body class="">
+    <div class="main-content-wrapper">
+        <!-- skip link -->
+        <a href="#main-page-content" class="skip-link">Przejdź do treści głównej</a>
+        <header>
+            <div class="header-bar">
+                <nav>
+                    <div class="quick-links-bar">
+                        <div class="user-name">
+                            current_user.email
+                        </div>
+                        <ul class="quick-links-menu hide-on-small-screen">
+                            <li class="quick-link-item switch-to-normal-contrast">
+                                <a href="#" title="Wyłącza tryb wysokiego kontrastu.">
+                                    <span class="quick-link-item-icon wo-background">
+                                        <img src="https://elogin.put.poznan.pl/images/common/normal_contrast_icon.png"
+                                            alt="Normalny kontrast" aria-hidden="true">
+                                    </span>
+                                    <br class="show-on-small-screen">
+                                    <span class="quick-link-item-label">
+                                        Normalny kontrast </span>
+                                </a>
+                            </li>
+                            <li class="quick-link-item switch-to-high-contrast">
+                                <a href="#"
+                                    title="Przełącza wygląd strony w tryb wysokiego kontrastu dla osób niedowidzących.">
+                                    <span class="quick-link-item-icon wo-background">
+                                        <img src="https://elogin.put.poznan.pl/images/common/high_contrast_icon.png"
+                                            alt="Wysoki kontrast" aria-hidden="true">
+                                    </span>
+                                    <br class="show-on-small-screen">
+                                    <span class="quick-link-item-label">
+                                        Wysoki kontrast </span>
+                                </a>
+                            </li>
+                        </ul>
+
+
+
+                        <ul class="quick-links-menu hide-on-small-screen">
+                            <li class="quick-link-item">
+                                <a href="mailto:it@rkn.put.poznan.pl"
+                                    title="Tworzy wiadomość w domyślnym kliencie pocztowym w celu zgłoszenia błędu lub innej uwagi dotyczącej działania systemu."
+                                    class="report" target="_self" rel="noopener" accesskey=""><span
+                                        class="quick-link-item-icon fa fa-comment"></span>&nbsp;<br
+                                        class="show-on-small-screen"><span class="quick-link-item-label">Zgłoś
+                                        uwagę</span></a>
+                            </li>
+                            <li class="quick-link-item">
+                                <a href="https://elogin.put.poznan.pl/?do=Help"
+                                    title="Wyświetla odpowiedzi na najczęściej zadawane pytania." class=""
+                                    target="_self" rel="noopener" accesskey=""><span
+                                        class="quick-link-item-icon fa fa-question"></span>&nbsp;<br
+                                        class="show-on-small-screen"><span
+                                        class="quick-link-item-label">Pomoc</span></a>
+                            </li>
+                            {{#if user}}
+                            <li class="quick-link-item">
+                                <a href="https://elogin.put.poznan.pl/?do=Logout&force=yes"
+                                    title="Wylogowuje użytkownika z&nbsp;systemu eKonto." class="" target="_self"
+                                    rel="noopener" accesskey=""><span
+                                        class="quick-link-item-icon fa fa-power-off"></span>&nbsp;<br
+                                        class="show-on-small-screen"><span class="quick-link-item-label">Wyloguj
+                                        się</span></a>
+                            </li>
+                            {{else}}
+                            <li class="quick-link-item">
+                                <a href="https://elogin.put.poznan.pl/?do=Logout&force=yes"
+                                    title="Wylogowuje użytkownika z&nbsp;systemu eKonto." class="" target="_self"
+                                    rel="noopener" accesskey=""><span
+                                        class="quick-link-item-icon fa fa-power-off"></span>&nbsp;<br
+                                        class="show-on-small-screen"><span class="quick-link-item-label">Zaloguj
+                                        się</span></a>
+                            </li>
+                            {{/if}}
+                        </ul>
+                        <span
+                            class="glyphicon glyphicon-chevron-down show-on-small-screen show-hide-quick-links-bar"></span>
+                    </div>
+                </nav>
+                <div class="top-menu-bar">
+                    <div class="top-menu-bar-left-column">
+                        <a href="https://elogin.put.poznan.pl" class="top-menu-block-left top-menu-logo-block">
+                            <img class="hide-on-small-screen"
+                                src="https://elogin.put.poznan.pl/images/common/put_logo_text.png"
+                                alt="Politechnika Poznańska - logo">
+                            <img class="show-on-small-screen"
+                                src="https://elogin.put.poznan.pl/images/common/put_logo.png"
+                                alt="Politechnika Poznańska - logo">
+                        </a>
+                    </div>
+
+                    <div class="top-menu-bar-right-column">
+                        <div class="top-menu-block-left">
+                            <h2>Platforma Internetowa Rady Kół Naukowych</h2>
+                            <h6>System zarządzania kołami naukowymi i organizacjami studenckimi
+                            </h6>
+                        </div>
+                        <div class="top-menu-block-right">
+
+                            <div class="current-user hide-on-small-screen">
+                                <div class="current-user-avatar">
+                                    <a href="https://www.gravatar.com/" class="email-not-present" target="_blank">
+                                        <img src="https://elogin.put.poznan.pl/images/avatar_big.png" alt="Awatar">
+                                    </a>
+                                </div>
+                                <div class="current-user-name">
+                                    <span class="login">
+                                        (current_user.email.split "@").first
+                                    </span>
+                                    <br /><span class="domain">@ (current_user.email.split "@")[1] </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- /top-menu-bar -->
+            </div>
+            <!-- /header-bar -->
+        </header>
